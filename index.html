@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar -- Navigation -->
+        <aside class="sidebar">
+            <a href="/" class="logo">
+                <img class="logo-image" src="/img/GroundCtrl Logo Slate Grey and Lime Green.png"
+                    alt="GroundCtrl brand logo of an air traffic control tower, the brand is an SaaS help desk">
+                <span class="logo-text"></span>
+            </a>
+            <!-- Categories & Items -->
+            <nav class="nav-category">
+                <h2>Menu</h2>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link" aria-current="page">
+                            <span class="material-symbols-outlined">dashboard_2</span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <span class="material-symbols-outlined">list_alt</span>
+                            <span>Tickets</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <span class="material-symbols-outlined">3p</span>
+                            <span>Message Center</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="nav-category">
+                <h2>Users & Settings</h2>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <span class="material-symbols-outlined">group</span>
+                            <span>Manage Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <span class="material-symbols-outlined">upload</span>
+                            <span>Upload Center</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <span class="material-symbols-outlined">settings</span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="nav-category">
+                <h2>Data</h2>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <span class="material-symbols-outlined">trending_up</span>
+                            <span>Metrics</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer class="footer">
+                <a href="/">
+                    <span class="material-symbols-outlined">logout</span>
+                    <span>Logout</span>
+                </a>
+            </footer>
+        </aside>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="user-welcome">
+                <h5><em>Tech Support</em></h5>
+                <h1>Good Morning, Kyle</h1>
+                <div class="user-container">
+                    <p class="user-update">You have <span>3</span> new tickets</p>
+                    <a href="/"><span class="material-symbols-outlined">notifications_active</span></a>
+                </div>
+            </div>
+
+            <div class="search">
+                <input class="search-bar" type="text" placeholder="Search all tickets (#154353456GC)">
+            </div>
+            <div class="user-profile">
+                <a href="/"><img class="user-image" src="/img/—Pngtree—user profile avatar_13369988.png"
+                        alt="user profile picture"></a>
+                <div class="user-info">
+                    <span class="user-name">Kyle Doe</span>
+                    <a class="log-out" href="/">Logout</a>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button type="button" class="btn">
+                    <a href="/"><span>Message Center</span>
+                        <span class="material-symbols-outlined">chat_bubble</span>
+                    </a>
+                    <span class="badge">1</span>
+                </button>
+            </div>
+        </header>
+        <!-- Main Section-->
+        <div class="main-container">
+            <div class="main-cards">
+                <div class="card-header">Live Tickets</div>
+                <div class="card-value">27</div>
+                <div class="value-subtext">Assigned</div>
+                <a href="/">
+                    <div class="split">
+                        <div class="card-value"><span>3</span></div>
+                        <div class="value-subtext">New</div>
+                    </div>
+                </a>
+            </div>
+            <div class="main-cards">
+                <div class="card-header">Personal Ticket Feedback</div>
+                <div class="table-feedback">
+                    <div class="row-feedback">
+                        <span class="material-symbols-outlined">person_alert</span>
+                        <div class="feedback-text">Thank's Kyle for resolving my issue so quickly.</div>
+                    </div>
+
+                    <div class="feedback-time"><a href="/">George - an hour ago</a></div>
+
+                    <div class="row-feedback">
+                        <span class="material-symbols-outlined">person_alert</span>
+                        <div class="feedback-text">Email is back up and running, thank-you.</div>
+                    </div>
+
+                    <div class="feedback-time"> <a href="/">Brad - an hour ago</a></div>
+
+                    <div class="row-feedback">
+                        <span class="material-symbols-outlined">person_alert</span>
+                        <div class="feedback-text">Computer is running quickly again, appreciate the prompt response.
+                        </div>
+                    </div>
+
+                    <div class="feedback-time"><a href="/">Samantha - 3 hours ago</a></div>
+
+                    <div class="row-feedback">
+                        <span class="material-symbols-outlined">person_alert</span>
+                        <div class="feedback-text">wow thank-you for unlocking the payroll so quickly, greatly
+                            appreciated.</div>
+                    </div>
+
+                    <div class="feedback-time"><a href="/">Jane - 2 days ago</a></div>
+
+                    <div class="row-feedback">
+                        <span class="material-symbols-outlined">person_alert</span>
+                        <div class="feedback-text">Thanks for recovering my passowrd for me, however now when I log-in
+                            to the payroll software <br> I'm locked out of everything started a new ticket, a prompt
+                            response would be greatly appreciated.</div>
+                    </div>
+
+                    <div class="feedback-time"><a href="/">Jane - 2 days ago</a></div>
+
+                </div>
+
+            </div>
+            <div class="main-cards">
+                <div class="card-header">Ticket</div>
+                <div class="card-value" id="timer">05:32</div>
+                <div class="value-subtext" id="subject"><b>Kyle Doe:</b> Live Ticket in Progress</div>
+                <div class="value-subtext">
+                    <h5>● Connected to:</h5>
+                </div>
+                <div class="value-subtext">Paul Steel</div>
+                <div class="screen-share-controls">
+                    <button onclick="stopTicket()" class="btn">Complete Ticket</button>
+                </div>
+            </div>
+            <div class="main-cards">
+                <div class="card-header">Command Center</div>
+                <div class="main-cards screen-share-card">
+                    <div class="screen-share-container">
+                        <div class="screen-share-header">
+                            <span class="connection-status">● Connected - to Paul Steel</span>
+                            <span class="connection-time"><em>00:04:32</em></span>
+                        </div>
+                        <div class="screen-share-display">
+                            <img src="/img/fakescreenshot.jpg" alt="Remote desktop view">
+                        </div>
+                        <div class="screen-share-controls">
+                            <button class="btn">Take Control</button>
+                            <button class="btn">End Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-cards screen-share-card chat">
+                    <div class="chat-header">Live Chat</div>
+                    <div class="chat-row">
+                        <div class="time-stamp">[TICKET - 8:00AM]</div>
+                        <div class="user-name">Paul Steel:</div>
+                        <div class="ticket-message">My Internet Explorer shortcut is not working when I double
+                            click it?</div>
+                    </div>
+                    <div class="chat-row">
+                        <div class="time-stamp">[8:02AM]</div>
+                        <div class="user-name">Kyle Doe:</div>
+                        <div class="ticket-message">Not a problem, do I have permission to access your station?</div>
+                    </div>
+                    <div class="search">
+                        <input class="search-bar" type="text" placeholder="Message">
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-cards">
+                <div class="card-header">Ticket Performance — This Week</div>
+                <div class="chart-container">
+                    <div class="bar-chart">
+                        <div class="bar-item">
+                            <div class="bar" style="height: 85%;" data-value="17"></div>
+                            <div class="bar-label">Mon</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 70%;" data-value="14"></div>
+                            <div class="bar-label">Tue</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 95%;" data-value="19"></div>
+                            <div class="bar-label">Wed</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 60%;" data-value="12"></div>
+                            <div class="bar-label">Thu</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 75%;" data-value="15"></div>
+                            <div class="bar-label">Fri</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-cards">
+                <div class="card-header">Agents</div>
+                <div class="card-agents">
+                    <div class="online">
+                        Online:
+                    </div>
+                    <div class="agents">Kyle Doe</div>
+                </div>
+                <div class="card-agents">
+                    <div class="offline">
+                        Offline:
+                    </div>
+                    <div class="agents">John Doe<br>Paul Doe</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let seconds = 272;
+        let timerInterval;
+        function updateTimer() {
+            seconds++;
+
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = seconds % 60;
+
+            const timeString =
+                String(hours).padStart(2, '0') + ':' +
+                String(minutes).padStart(2, '0') + ':' +
+                String(secs).padStart(2, '0');
+
+            document.getElementById('timer').textContent = timeString;
+        }
+
+        timerInterval = setInterval(updateTimer, 1000);
+
+        function stopTicket() {
+            clearInterval(timerInterval)
+            timerInterval = null
+            document.getElementById('timer').textContent = `Complete`
+            document.getElementById('subject').textContent = ``
+        }
+    </script>
+</body>
+
+</html>
